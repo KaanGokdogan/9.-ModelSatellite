@@ -1,5 +1,5 @@
 # Since the project is a team product, I uploaded it to GitHub as private, so I can show the project with a private url.
-## 8th Model Satellite Competition | 2023
+## 9th Model Satellite Competition | 2024
 
 ### A model satellite designed in the TÜRKSAT Model Satellite Competition represents a payload that can land in the planetary atmosphere, collect data from its sensors, transfer the collected data to an interface environment, record images and perform instant data exchange.
 
