@@ -1,9 +1,17 @@
-# Since the project is a team product, I uploaded it to GitHub as private, so I can show the project with a private url.
-## 9th Model Satellite Competition | 2024
-
-### A model satellite designed in the TÜRKSAT Model Satellite Competition represents a payload that can land in the planetary atmosphere, collect data from its sensors, transfer the collected data to an interface environment, record images and perform instant data exchange.
-
-
-#### The model satellite will be designed and manufactured by the teams, consisting of two parts: the carrier and the payload. The carrier is the part that protects the payload. The payload is the part that will fulfil the desired tasks. The model satellite (carrier + payload) will be launched to an altitude of 700 metres with the rocket provided by TÜRKSAT and released from this altitude. The model satellite will descend to 400 metres with the carrier's passive landing system, and the carrier and payload will be separated from each other at an altitude of 400 metres. After separation, the payload will continue its descent with the active landing system. The payload will send a telemetry packet to the competitor team's own ground station every second during the entire flight (from the moment it is switched on until it lands on the ground).
-
-#### The payload will transmit the video image, telemetry data and the data received from the carrier to the ground station during the entire flight and will also be recorded on the SD Card on the payload. Time-dependent graphs of the telemetry data will be plotted in real time at the ground station. The video image will be monitored instantaneously at the ground station. When the mission is completed, the telemetry data and video images recorded on the ground station computer together with the SD card on the model satellite will be delivered to the competition officer. Data transmission will be automatically terminated 10 seconds after the payload lands. The model satellite will give an audible warning until it is found by the rescue team and will show its landing position on the ground station interface.
+# This repository contains the Ground Station Interface and Flight Software developed for the 9. Model Satellite Competition. [Click here](https://cdn.teknofest.org/media/upload/userFormUpload/Model_Uydu_Yar%C4%B1%C5%9Fmas%C4%B1_2024_v2.1TR_ZX1et.pdf) to see the content of the competition.
+## Overview
+### Ground Station Interface
+#### The ground station interface allows users to:
+- Monitor real-time telemetry data from the satellite.
+- Send commands to control the satellite's operation.
+- Visualize satellite data with graphs and live metrics.
+### Flight Software
+#### The flight software runs on the satellite, enabling:
+- Data collection from sensors.
+- Communication with the ground station via [UART, LoRa.].
+- Execution of predefined mission sequences.
+### Technology Stack
+#### Ground Station Interface: 
+- The ground station interface is developed using C# and Windows Forms to provide a responsive and user-friendly application for monitoring and controlling the satellite.
+#### Flight Software: 
+- The flight software is written in C/C++ and designed to run on an Arduino-compatible microcontroller (Teensy 4.1)
